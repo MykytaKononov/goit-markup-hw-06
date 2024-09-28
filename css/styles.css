@@ -32,8 +32,7 @@ button {
   border: 0px;
 }
 .container {
-  width: 1158px;
-  padding: 0 15px 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 .header-container {
@@ -47,7 +46,7 @@ button {
     0px 2px 1px 0px #2e2f4214;
 }
 .header-logo {
-  margin-right: 76px;
+  margin-right: 149px;
   position: relative;
 }
 .logo {
@@ -65,6 +64,11 @@ button {
   color: #f4f4fd;
   display: inline-block;
   margin-bottom: 16px;
+}
+.menu-button {
+  width: 24px;
+  height: 24px;
+  margin: 16px 0;
 }
 .navigation {
   display: flex;
@@ -158,18 +162,18 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-background.jpg);
-  padding: 188px 0 188px;
+    url(../images/hero-background-mobile.jpg);
+  padding: 72px 52px;
 }
 .hc-h {
   color: #ffffff;
   max-width: 496px;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  margin: 0 auto 48px;
+  margin: 0 auto 72px;
 }
 .hc-button {
   min-width: 169px;
@@ -193,26 +197,27 @@ button {
   background-color: #4550d1;
 }
 .container-features {
-  padding: 120px 0 120px;
+  padding: 92px 0;
 }
 .container-features-ul {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 .container-features-li {
-  width: calc((100% - 72px) / 4);
 }
 .container-features-h {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   color: #2e2f42;
+  text-align: center;
 }
 .container-features-p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.6;
   color: #434455;
@@ -228,7 +233,7 @@ button {
   margin-bottom: 8px;
 }
 .container-team {
-  padding: 120px 0 120px;
+  padding: 92px 0;
   background-color: #f4f4fd;
 }
 .container-team-h-main {
@@ -241,12 +246,12 @@ button {
   color: #2e2f42;
 }
 .container-team-ul {
+  margin: 0 12px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 24px;
 }
 .container-team-li {
-  width: calc((100% - 48px) / 4);
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -304,7 +309,7 @@ button {
   fill: #f4f4fd;
 }
 .container-portfolio {
-  padding: 120px 0 120px;
+  padding: 96px 0;
 }
 .container-portfolio-h {
   margin-bottom: 72px;
@@ -320,13 +325,13 @@ button {
   row-gap: 48px;
   flex-wrap: wrap;
   display: flex;
+  flex-direction: column;
 }
 .container-portfolio-li:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .container-portfolio-li {
-  width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .relative-overlay {
@@ -371,8 +376,11 @@ button {
   color: #434455;
 }
 .footer {
-  padding: 100px 0 100px;
+  padding: 96px 0;
   background-color: rgba(46, 47, 66, 1);
+}
+.footer-logo {
+  margin: 0 86px;
 }
 .tagline {
   color: #f4f4fd;
@@ -382,7 +390,7 @@ button {
   line-height: 1.5;
 }
 .container-footer {
-  margin-right: 120px;
+  margin-bottom: 72px;
 }
 .footer-social-p {
   font-weight: 500;
@@ -392,9 +400,14 @@ button {
   color: #ffffff;
   margin-bottom: 16px;
 }
+.footer-social-links {
+  text-align: center;
+}
 .footer-social-links-container {
   display: flex;
+  justify-content: center;
   gap: 16px;
+  margin-bottom: 72px;
 }
 .footer-social-links-container-li {
   width: 40px;
@@ -419,14 +432,14 @@ button {
 }
 .footer-content {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
 }
 .footer-email-box {
-  margin-left: 80px;
+  text-align: center;
 }
 .footer-form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 24px;
 }
 .footer-email-label {
@@ -446,7 +459,7 @@ button {
   fill: #f4f4fd;
 }
 .footer-email-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   padding: 8px 0px 8px 16px;
   background-color: transparent;
@@ -461,7 +474,8 @@ button {
 }
 
 .footer-button {
-  min-width: 165px;
+  align-self: center;
+  width: 165px;
   height: 40px;
   display: flex;
   justify-content: center;

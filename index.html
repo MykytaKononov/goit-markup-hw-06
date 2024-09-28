@@ -22,7 +22,10 @@
           <a class="logo header-logo" href="index.html"
             >WEB<span class="logo-span">STUDIO</span></a
           >
-          <ul class="menu">
+          <svg class="menu-button">
+            <use href="./images/icons.svg#menu" width="24" height="24"></use>
+          </svg>
+          <ul class="menu visually-hidden">
             <li>
               <a class="menu-link menu-link-first" href="/">Studio</a>
             </li>
@@ -34,7 +37,7 @@
             </li>
           </ul>
         </nav>
-        <address class="address">
+        <address class="address visually-hidden">
           <ul class="address-list">
             <li>
               <a href="/" class="address-link">info@devstudio.com</a>
@@ -61,7 +64,7 @@
           <h2 class="visually-hidden">Our Benefits</h2>
           <ul class="container-features-ul">
             <li class="container-features-li">
-              <div class="svg-features-box">
+              <div class="svg-features-box visually-hidden">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
@@ -73,7 +76,7 @@
               </p>
             </li>
             <li class="container-features-li">
-              <div class="svg-features-box">
+              <div class="svg-features-box visually-hidden">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
@@ -85,7 +88,7 @@
               </p>
             </li>
             <li class="container-features-li">
-              <div class="svg-features-box">
+              <div class="svg-features-box visually-hidden">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
@@ -97,7 +100,7 @@
               </p>
             </li>
             <li class="container-features-li">
-              <div class="svg-features-box">
+              <div class="svg-features-box visually-hidden">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
@@ -317,7 +320,7 @@
           <ul class="container-portfolio-ul">
             <li class="container-portfolio-li">
               <div class="relative-overlay">
-                <img src="./images/banking-app.jpg" alt="Banking App" />
+                <img src="./images/banking-app-mobile.jpg" alt="Banking App" />
 
                 <p class="absolute-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -333,7 +336,7 @@
             <li class="container-portfolio-li">
               <div class="relative-overlay">
                 <img
-                  src="./images/cashless-payment.jpg"
+                  src="./images/cashless-payment-mobile.jpg"
                   alt="Cashless Payment"
                 />
                 <p class="absolute-overlay">
@@ -349,7 +352,10 @@
             </li>
             <li class="container-portfolio-li">
               <div class="relative-overlay">
-                <img src="./images/meditation-app.jpg" alt="Meditation App" />
+                <img
+                  src="./images/meditation-app-mobile.jpg"
+                  alt="Meditation App"
+                />
                 <p class="absolute-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -363,7 +369,10 @@
             </li>
             <li class="container-portfolio-li">
               <div class="relative-overlay">
-                <img src="./images/taxi-service.jpg" alt="Taxi Service" />
+                <img
+                  src="./images/taxi-service-mobile.jpg"
+                  alt="Taxi Service"
+                />
                 <p class="absolute-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -378,7 +387,7 @@
             <li class="container-portfolio-li">
               <div class="relative-overlay">
                 <img
-                  src="./images/screen-illustrations.jpg"
+                  src="./images/screen-illustrations-mobile.jpg"
                   alt="Screeen illustrations"
                 />
                 <p class="absolute-overlay">
@@ -394,7 +403,10 @@
             </li>
             <li class="container-portfolio-li">
               <div class="relative-overlay">
-                <img src="./images/online-courses.jpg" alt="Online Courses" />
+                <img
+                  src="./images/online-courses-mobile.jpg"
+                  alt="Online Courses"
+                />
                 <p class="absolute-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -413,7 +425,9 @@
     <footer class="footer">
       <div class="footer-content container">
         <div class="container-footer">
-          <a class="logo">WEB<span class="logo-alt">STUDIO</span></a>
+          <a class="logo footer-logo"
+            >WEB<span class="logo-alt">STUDIO</span></a
+          >
           <p class="tagline">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -490,7 +504,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay is-closed">
       <div class="modal">
         <button class="modal-button" type="button">
           <svg width="8" height="8" class="modal-svg-exit">
