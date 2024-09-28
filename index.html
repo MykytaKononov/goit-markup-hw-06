@@ -23,7 +23,7 @@
             >WEB<span class="logo-span">STUDIO</span></a
           >
 
-          <ul class="menu visually-hidden">
+          <ul class="menu">
             <li>
               <a class="menu-link menu-link-first" href="/">Studio</a>
             </li>
@@ -40,7 +40,7 @@
             <use href="./images/icons.svg#menu"></use>
           </svg>
         </button>
-        <address class="address visually-hidden">
+        <address class="address">
           <ul class="address-list">
             <li>
               <a href="/" class="address-link">info@devstudio.com</a>
@@ -67,7 +67,7 @@
           <h2 class="visually-hidden">Our Benefits</h2>
           <ul class="container-features-ul">
             <li class="container-features-li">
-              <div class="svg-features-box visually-hidden">
+              <div class="svg-features-box">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
@@ -79,7 +79,7 @@
               </p>
             </li>
             <li class="container-features-li">
-              <div class="svg-features-box visually-hidden">
+              <div class="svg-features-box">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
@@ -91,7 +91,7 @@
               </p>
             </li>
             <li class="container-features-li">
-              <div class="svg-features-box visually-hidden">
+              <div class="svg-features-box">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
@@ -103,7 +103,7 @@
               </p>
             </li>
             <li class="container-features-li">
-              <div class="svg-features-box visually-hidden">
+              <div class="svg-features-box">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
@@ -323,8 +323,16 @@
           <ul class="container-portfolio-ul">
             <li class="container-portfolio-li">
               <div class="relative-overlay">
-                <img src="./images/banking-app-mobile.jpg" alt="Banking App" />
-
+                <img
+                  src="./images/banking-app-mobile.jpg"
+                  alt="Banking App"
+                  class="image-mobile"
+                />
+                <img
+                  src="./images/banking-app-tablet.jpg"
+                  alt="Banking App"
+                  class="image-tablet"
+                />
                 <p class="absolute-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -341,6 +349,12 @@
                 <img
                   src="./images/cashless-payment-mobile.jpg"
                   alt="Cashless Payment"
+                  class="image-mobile"
+                />
+                <img
+                  src="./images/cashless-payment-tablet.jpg"
+                  alt="Cashless Payment"
+                  class="image-tablet"
                 />
                 <p class="absolute-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -358,6 +372,12 @@
                 <img
                   src="./images/meditation-app-mobile.jpg"
                   alt="Meditation App"
+                  class="image-mobile"
+                />
+                <img
+                  src="./images/meditation-app-tablet.jpg"
+                  alt="Meditation App"
+                  class="image-tablet"
                 />
                 <p class="absolute-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -375,6 +395,12 @@
                 <img
                   src="./images/taxi-service-mobile.jpg"
                   alt="Taxi Service"
+                  class="image-mobile"
+                />
+                <img
+                  src="./images/taxi-service-tablet.jpg"
+                  alt="Taxi Service"
+                  class="image-tablet"
                 />
                 <p class="absolute-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -392,6 +418,12 @@
                 <img
                   src="./images/screen-illustrations-mobile.jpg"
                   alt="Screeen illustrations"
+                  class="image-mobile"
+                />
+                <img
+                  src="./images/screen-illustrations-tablet.jpg"
+                  alt="Screeen illustrations"
+                  class="image-tablet"
                 />
                 <p class="absolute-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -409,6 +441,12 @@
                 <img
                   src="./images/online-courses-mobile.jpg"
                   alt="Online Courses"
+                  class="image-mobile"
+                />
+                <img
+                  src="./images/online-courses-tablet.jpg"
+                  alt="Online Courses"
+                  class="image-tablet"
                 />
                 <p class="absolute-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -577,6 +615,166 @@
             </label>
           </div>
           <button class="modal-send-button" type="button">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-overlay is-closed">
+      <div class="modal-mobile-menu">
+        <button class="modal-button" type="button">
+          <svg width="8" height="8" class="modal-svg-exit">
+            <use href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <div class="modal-menu-buttons">
+          <ul class="modal-menu-buttons-ul">
+            <li class="modal-menu-buttons-li">
+              <p class="modal-menu-buttons-p">Studio</p>
+            </li>
+            <li class="modal-menu-buttons-li">
+              <p class="modal-menu-buttons-p">Portfolio</p>
+            </li>
+            <li class="modal-menu-buttons-li">
+              <p class="modal-menu-buttons-p">Contacts</p>
+            </li>
+          </ul>
+        </div>
+        <address>
+          <ul class="address-list modal-menu-address">
+            <li>
+              <a class="address-link">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a class="address-link">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+        <div class="footer-social-links">
+          <ul
+            class="footer-social-links-container modal-menu-social-links-container"
+          >
+            <li class="footer-social-links-container-li">
+              <a class="footer-social-links-container-a" href=""
+                ><svg
+                  class="footer-social-links-container-svg"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social-links-container-li">
+              <a class="footer-social-links-container-a" href=""
+                ><svg
+                  class="footer-social-links-container-svg"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-links-container-li">
+              <a class="footer-social-links-container-a" href=""
+                ><svg
+                  class="footer-social-links-container-svg"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-links-container-li">
+              <a class="footer-social-links-container-a" href=""
+                ><svg
+                  class="footer-social-links-container-svg"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay is-closed">
+      <div class="modal-mobile-order">
+        <button class="modal-button" type="button">
+          <svg width="8" height="8" class="modal-svg-exit">
+            <use href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <p class="modal-mobile-order-main-p">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <div class="modal-form-div">
+            <label class="modal-label" for="user-name"> Name</label>
+            <div class="modal-label-div">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="modal-svg" width="18" height="24">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-div">
+            <label class="modal-label" for="phone"> Phone</label>
+            <div class="modal-label-div">
+              <input class="modal-input" type="tel" name="phone" id="phone" />
+              <svg class="modal-svg" width="18" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-div">
+            <label class="modal-label" for="email"> Email</label>
+            <div class="modal-label-div">
+              <input class="modal-input" type="email" name="email" id="email" />
+              <svg class="modal-svg" width="18" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form-div-textarea">
+            <label class="modal-label" for="user-comment"> Comment</label>
+            <textarea
+              class="modal-input modal-input-textarea"
+              placeholder="Text input"
+              name="user-comment"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="modal-form-div-checkbox">
+            <input
+              class="modal-input-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="modal-label-checkbox" for="user-privacy">
+              <span class="modal-label-span"
+                ><svg width="10" height="8" class="modal-span-svg">
+                  <use href="./images/icons.svg#vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="modal-checkbox-link">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-send-button mobile-send-button" type="button">
+            Send
+          </button>
         </form>
       </div>
     </div>
