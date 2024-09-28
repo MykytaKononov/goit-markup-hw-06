@@ -35,18 +35,13 @@ button {
   padding: 0 16px;
   margin: 0 auto;
 }
-.header-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+
 .header {
   border-bottom: 1px solid rgba(231, 233, 252, 1);
   box-shadow: 0px 1px 6px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 2px 1px 0px #2e2f4214;
 }
 .header-logo {
-  margin-right: 149px;
   position: relative;
 }
 .logo {
@@ -66,13 +61,13 @@ button {
   margin-bottom: 16px;
 }
 .menu-button {
-  width: 24px;
-  height: 24px;
   margin: 16px 0;
 }
+
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .menu {
   display: flex;
@@ -204,8 +199,7 @@ button {
   flex-direction: column;
   gap: 72px;
 }
-.container-features-li {
-}
+
 .container-features-h {
   font-size: 36px;
   font-weight: 700;
@@ -669,8 +663,7 @@ button {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-span-svg {
-}
+
 .modal-svg {
   position: absolute;
   fill: #2e2f42;
