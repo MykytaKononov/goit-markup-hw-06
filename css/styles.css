@@ -32,14 +32,19 @@ button {
   border: 0px;
 }
 .container {
+  max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
-
 .header {
   border-bottom: 1px solid rgba(231, 233, 252, 1);
   box-shadow: 0px 1px 6px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 2px 1px 0px #2e2f4214;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-logo {
   position: relative;
@@ -61,13 +66,14 @@ button {
   margin-bottom: 16px;
 }
 .menu-button {
-  margin: 16px 0;
+  background-color: transparent;
+  padding: 16px 0;
+}
+.menu-button-icon {
+  display: block;
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .menu {
   display: flex;
@@ -148,7 +154,7 @@ button {
 
 .hero-container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 320px;
   background-color: rgba(46, 47, 66, 1);
   background-repeat: no-repeat;
   background-position: center;
