@@ -378,7 +378,8 @@ button {
   background-color: rgba(46, 47, 66, 1);
 }
 .footer-logo {
-  margin: 0 86px 16px 86px;
+  display: inline-block;
+  margin: 16px 0;
 }
 .tagline {
   color: #f4f4fd;
@@ -972,9 +973,7 @@ button {
   .container-footer {
     margin: 0px;
   }
-  .footer-logo {
-    margin: 0px;
-  }
+
   .footer-social-p {
     text-align: start;
   }
