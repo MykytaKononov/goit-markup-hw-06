@@ -64,7 +64,6 @@ button {
 .logo-alt {
   color: #f4f4fd;
   display: inline-block;
-  margin-bottom: 16px;
 }
 .menu-button {
   background-color: transparent;
@@ -248,7 +247,7 @@ button {
   margin: 0 12px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 72px;
 }
 .container-team-li {
   background-color: #ffffff;
@@ -326,7 +325,7 @@ button {
   display: flex;
   flex-direction: column;
 }
-.container-portfolio-li:hover {
+.container-portfolio-li {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -379,7 +378,7 @@ button {
   background-color: rgba(46, 47, 66, 1);
 }
 .footer-logo {
-  margin: 0 86px;
+  margin: 0 86px 16px 86px;
 }
 .tagline {
   color: #f4f4fd;
@@ -401,12 +400,12 @@ button {
 }
 .footer-social-links {
   text-align: center;
+  margin-bottom: 72px;
 }
 .footer-social-links-container {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 .footer-social-links-container-li {
   width: 40px;
@@ -511,7 +510,11 @@ button {
   pointer-events: none;
   opacity: 0;
 }
-.modal-overlay.is-open {
+.modal-mobile-menu.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-order-menu.is-open {
   opacity: 1;
   pointer-events: all;
 }
@@ -713,8 +716,8 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fcfcfc;
-  min-height: 640px;
-  width: 320px;
+  height: 100%;
+  width: 100%;
   overflow-y: hidden;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -749,6 +752,7 @@ button {
 }
 .modal-menu-social-links-container {
   margin-bottom: 40px;
+  gap: 40px;
 }
 .modal-mobile-order {
   position: absolute;
@@ -792,6 +796,23 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
 }
+.modal-menu-overlay {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(46, 47, 66, 0.4);
+  top: 0;
+  left: 0;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .image-tablet {
     display: none;
@@ -838,6 +859,12 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .modal-mobile-menu {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+  }
+
   .image-mobile {
     display: none;
   }
@@ -904,6 +931,9 @@ button {
   .container-features-li {
     flex-basis: calc((100% - 24px) / 2);
   }
+  .container-features-h {
+    text-align: left;
+  }
   .container-team-ul {
     flex-direction: row;
     flex-wrap: wrap;
@@ -947,6 +977,9 @@ button {
   .footer-form {
     flex-direction: row;
   }
+  .modal-mobile-order {
+    width: 408px;
+  }
 }
 @media screen and (max-width: 1157px) {
   .svg-features-box {
@@ -964,6 +997,13 @@ button {
   }
 }
 @media screen and (min-width: 1158px) {
+  .container-portfolio-li:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .container-portfolio-li {
+    box-shadow: none;
+  }
   .address-list {
     flex-direction: row;
     gap: 40px;
@@ -973,6 +1013,10 @@ button {
   }
   .container {
     max-width: 1158px;
+    padding: 0 15px;
+  }
+  .hc-h {
+    margin-bottom: 48px;
   }
   .header-container {
     max-width: 1158px;
